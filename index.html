@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telefon Ko'rinishi</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        #phone {
+            width: 320px;
+            height: 640px;
+            background-color: #000;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #screen {
+            width: 100%;
+            height: 75%;
+            background-image: url("https://mykaleidoscope.ru/x/uploads/posts/2022-10/1666389994_60-mykaleidoscope-ru-p-tabiat-manzarasi-krasivo-61.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #apps {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            position: absolute;
+            bottom: 5px;
+        }
+
+        .app {
+            width: 25px;
+            height: 25px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        #info {
+            text-align: center;
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+        }
+
+        #info h2 {
+            font-size: 16px;
+        }
+
+        #info p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        #info span {
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="phone">
+        <div id="screen">
+            <img src="https://mykaleidoscope.ru/x/uploads/posts/2022-10/1666389994_60-mykaleidoscope-ru-p-tabiat-manzarasi-krasivo-61.jpg" alt="">
+        </div>
+        <div id="info">
+            <h2>Oddiy hayolimdagi telifon</h2>
+            <p>Batareya Vaqti: <span id="batteryTime">12 soat</span></p>
+            <p>Quvvat: <span id="power">10 Vatt</span></p>
+            <p>Hozirgi O'zbekiston vaqti: <span id="uzbekistanTime"></span></p>
+        </div>
+    </div>
+
+    <script src="main.js">
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
